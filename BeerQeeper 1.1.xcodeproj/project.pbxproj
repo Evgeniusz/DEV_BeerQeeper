@@ -6,63 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		18FE8CC82EB903850001FDB5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18FE8CA92EB903830001FDB5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 18FE8CB02EB903830001FDB5;
-			remoteInfo = "BeerQeeper 1.1";
-		};
-		18FE8CD22EB903850001FDB5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18FE8CA92EB903830001FDB5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 18FE8CB02EB903830001FDB5;
-			remoteInfo = "BeerQeeper 1.1";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		18FE8CB12EB903830001FDB5 /* BeerQeeper 1.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BeerQeeper 1.1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		18FE8CC72EB903850001FDB5 /* BeerQeeper 1.1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BeerQeeper 1.1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		18FE8CD12EB903850001FDB5 /* BeerQeeper 1.1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BeerQeeper 1.1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		18F496E92EBCD86F00FF24E6 /* Exceptions for "BeerQeeper 1.1" folder in "BeerQeeper 1.1" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 18FE8CB02EB903830001FDB5 /* BeerQeeper 1.1 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		18FE8CB32EB903830001FDB5 /* BeerQeeper 1.1 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				18F496E92EBCD86F00FF24E6 /* Exceptions for "BeerQeeper 1.1" folder in "BeerQeeper 1.1" target */,
+			);
 			path = "BeerQeeper 1.1";
-			sourceTree = "<group>";
-		};
-		18FE8CCA2EB903850001FDB5 /* BeerQeeper 1.1Tests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "BeerQeeper 1.1Tests";
-			sourceTree = "<group>";
-		};
-		18FE8CD42EB903850001FDB5 /* BeerQeeper 1.1UITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "BeerQeeper 1.1UITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		18FE8CAE2EB903830001FDB5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18FE8CC42EB903850001FDB5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18FE8CCE2EB903850001FDB5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,8 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				18FE8CB32EB903830001FDB5 /* BeerQeeper 1.1 */,
-				18FE8CCA2EB903850001FDB5 /* BeerQeeper 1.1Tests */,
-				18FE8CD42EB903850001FDB5 /* BeerQeeper 1.1UITests */,
 				18FE8CB22EB903830001FDB5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,8 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				18FE8CB12EB903830001FDB5 /* BeerQeeper 1.1.app */,
-				18FE8CC72EB903850001FDB5 /* BeerQeeper 1.1Tests.xctest */,
-				18FE8CD12EB903850001FDB5 /* BeerQeeper 1.1UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,52 +83,6 @@
 			productReference = 18FE8CB12EB903830001FDB5 /* BeerQeeper 1.1.app */;
 			productType = "com.apple.product-type.application";
 		};
-		18FE8CC62EB903850001FDB5 /* BeerQeeper 1.1Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 18FE8CDF2EB903850001FDB5 /* Build configuration list for PBXNativeTarget "BeerQeeper 1.1Tests" */;
-			buildPhases = (
-				18FE8CC32EB903850001FDB5 /* Sources */,
-				18FE8CC42EB903850001FDB5 /* Frameworks */,
-				18FE8CC52EB903850001FDB5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				18FE8CC92EB903850001FDB5 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				18FE8CCA2EB903850001FDB5 /* BeerQeeper 1.1Tests */,
-			);
-			name = "BeerQeeper 1.1Tests";
-			packageProductDependencies = (
-			);
-			productName = "BeerQeeper 1.1Tests";
-			productReference = 18FE8CC72EB903850001FDB5 /* BeerQeeper 1.1Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		18FE8CD02EB903850001FDB5 /* BeerQeeper 1.1UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 18FE8CE22EB903850001FDB5 /* Build configuration list for PBXNativeTarget "BeerQeeper 1.1UITests" */;
-			buildPhases = (
-				18FE8CCD2EB903850001FDB5 /* Sources */,
-				18FE8CCE2EB903850001FDB5 /* Frameworks */,
-				18FE8CCF2EB903850001FDB5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				18FE8CD32EB903850001FDB5 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				18FE8CD42EB903850001FDB5 /* BeerQeeper 1.1UITests */,
-			);
-			name = "BeerQeeper 1.1UITests";
-			packageProductDependencies = (
-			);
-			productName = "BeerQeeper 1.1UITests";
-			productReference = 18FE8CD12EB903850001FDB5 /* BeerQeeper 1.1UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,14 +95,6 @@
 				TargetAttributes = {
 					18FE8CB02EB903830001FDB5 = {
 						CreatedOnToolsVersion = 16.2;
-					};
-					18FE8CC62EB903850001FDB5 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 18FE8CB02EB903830001FDB5;
-					};
-					18FE8CD02EB903850001FDB5 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 18FE8CB02EB903830001FDB5;
 					};
 				};
 			};
@@ -201,28 +113,12 @@
 			projectRoot = "";
 			targets = (
 				18FE8CB02EB903830001FDB5 /* BeerQeeper 1.1 */,
-				18FE8CC62EB903850001FDB5 /* BeerQeeper 1.1Tests */,
-				18FE8CD02EB903850001FDB5 /* BeerQeeper 1.1UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		18FE8CAF2EB903830001FDB5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18FE8CC52EB903850001FDB5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18FE8CCF2EB903850001FDB5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -239,34 +135,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		18FE8CC32EB903850001FDB5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18FE8CCD2EB903850001FDB5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		18FE8CC92EB903850001FDB5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 18FE8CB02EB903830001FDB5 /* BeerQeeper 1.1 */;
-			targetProxy = 18FE8CC82EB903850001FDB5 /* PBXContainerItemProxy */;
-		};
-		18FE8CD32EB903850001FDB5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 18FE8CB02EB903830001FDB5 /* BeerQeeper 1.1 */;
-			targetProxy = 18FE8CD22EB903850001FDB5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		18FE8CDB2EB903850001FDB5 /* Debug */ = {
@@ -448,74 +317,6 @@
 			};
 			name = Release;
 		};
-		18FE8CE02EB903850001FDB5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example2.BeerQeeper-1-1Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeerQeeper 1.1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BeerQeeper 1.1";
-			};
-			name = Debug;
-		};
-		18FE8CE12EB903850001FDB5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example2.BeerQeeper-1-1Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeerQeeper 1.1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BeerQeeper 1.1";
-			};
-			name = Release;
-		};
-		18FE8CE32EB903850001FDB5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example2.BeerQeeper-1-1UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "BeerQeeper 1.1";
-			};
-			name = Debug;
-		};
-		18FE8CE42EB903850001FDB5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example2.BeerQeeper-1-1UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "BeerQeeper 1.1";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -533,24 +334,6 @@
 			buildConfigurations = (
 				18FE8CDB2EB903850001FDB5 /* Debug */,
 				18FE8CDC2EB903850001FDB5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		18FE8CDF2EB903850001FDB5 /* Build configuration list for PBXNativeTarget "BeerQeeper 1.1Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				18FE8CE02EB903850001FDB5 /* Debug */,
-				18FE8CE12EB903850001FDB5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		18FE8CE22EB903850001FDB5 /* Build configuration list for PBXNativeTarget "BeerQeeper 1.1UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				18FE8CE32EB903850001FDB5 /* Debug */,
-				18FE8CE42EB903850001FDB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -20,30 +20,37 @@ class ViewController: UIViewController {
         let label = UILabel()
         return label
     }()
+    
     private var secondNameOfBeerAvaliable: UILabel = {
         let label = UILabel()
         return label
     }()
+    
     private var thirdNameOfBeerAvailiable: UILabel = {
         let label = UILabel()
         return label
     }()
+    
     private var labelPurcaseCount: UILabel = {
         let label = UILabel()
         return label
     }()
+    
     private let firstBeerLabelCount: UILabel = {
         let label = UILabel()
         return label
     }()
+    
     private let secondBeerLabelCount: UILabel = {
         let label = UILabel()
         return label
     }()
+    
     private let thirdBeerLabelCount: UILabel = {
         let label = UILabel()
         return label
     }()
+    
     private let buttonOpenSceneOutlet: UIButton = {
         let button = UIButton()
         button.setTitle("Open", for: .normal)
@@ -51,6 +58,7 @@ class ViewController: UIViewController {
         button.backgroundColor = .white
         return button
     }()
+    
     private let buttonSellPurchasesOutlet: UIButton = {
         let button = UIButton()
         button.setTitle("Sell", for: .normal)
@@ -58,6 +66,7 @@ class ViewController: UIViewController {
         button.backgroundColor = .red
         return button
     }()
+    
     private let buttonCloseSceneOutlet: UIButton = {
         let button = UIButton()
         button.setTitle("Close day", for: .normal)
@@ -65,6 +74,7 @@ class ViewController: UIViewController {
         button.backgroundColor = .white
         return button
     }()
+    
     private let hiddenButton: UIButton = {
         let button = UIButton()
         button.setTitle("New day", for: .normal)
@@ -72,36 +82,42 @@ class ViewController: UIViewController {
         button.backgroundColor = .gray
         return button
     }()
+    
     private let minusOne: UIButton = {
         let button = UIButton()
         button.setTitle("-", for: .normal)
         button.setTitleColor(.black, for: .normal)
         return button
     }()
+    
     private let minusTwo: UIButton = {
         let button = UIButton()
         button.setTitle("-", for: .normal)
         button.setTitleColor(.black, for: .normal)
         return button
     }()
+    
     private let minusThree: UIButton = {
         let button = UIButton()
         button.setTitle("-", for: .normal)
         button.setTitleColor(.black, for: .normal)
         return button
     }()
+    
     private let addOne: UIButton = {
         let button = UIButton()
         button.setTitle("+", for: .normal)
         button.setTitleColor(.black, for: .normal)
         return button
     }()
+    
     private let addTwo: UIButton = {
         let button = UIButton()
         button.setTitle("+", for: .normal)
         button.setTitleColor(.black, for: .normal)
         return button
     }()
+    
     private let addThree: UIButton = {
         let button = UIButton()
         button.setTitle("+", for: .normal)
@@ -126,30 +142,35 @@ class ViewController: UIViewController {
         }
         sender.addAction(action, for: .touchUpInside)
     }
+    
     func openSceneButton(sender: UIButton) {
         let action = UIAction { _ in
             self.openSceneButtonFunc()
         }
         sender.addAction(action, for: .touchUpInside)
     }
+    
     func sellButton (sender: UIButton) {
         let action = UIAction { _ in
             self.sellButton()
         }
         sender.addAction(action, for: .touchUpInside)
     }
+    
     func closeDayButton(sender: UIButton){
         let action = UIAction { _ in
             self.closeDay()
         }
         sender.addAction(action, for: .touchUpInside)
     }
+    
     func resetScene(sender: UIButton){
         let action = UIAction { _ in
             self.resetDay()
         }
         sender.addAction(action, for: .touchUpInside)
     }
+    
     fileprivate func minusPlusRefactor() {
         self.minusPlus(sender: addOne)
         self.minusPlus(sender: addTwo)
@@ -158,6 +179,7 @@ class ViewController: UIViewController {
         self.minusPlus(sender: minusTwo)
         self.minusPlus(sender: minusThree)
     }
+    
     func openSceneButtonFunc(){
         buttonOpenSceneOutlet.isEnabled = false
         buttonOpenSceneOutlet.setTitleColor(.lightGray, for: .normal)
@@ -173,6 +195,7 @@ class ViewController: UIViewController {
         minusThree.isEnabled = true
         labelPurcaseCount.text = "Select Products quantity"
     }
+    
     func start() {
         self.screenSizes()
         self.createArray()
@@ -230,10 +253,12 @@ class ViewController: UIViewController {
         self.sellButton(sender: buttonSellPurchasesOutlet)
         self.closeDayButton(sender: buttonCloseSceneOutlet)
     }
+    
     func secondStart() {
         self.buttons()
         self.openSceneButton(sender: buttonOpenSceneOutlet)
     }
+    
     func textSizesForLabels (sender: UILabel) -> UILabel {
         sender.textAlignment = .left
         sender.font = .systemFont(ofSize: standartLabelFont, weight: .bold)
@@ -241,6 +266,7 @@ class ViewController: UIViewController {
         sender.numberOfLines = 0
         return sender
     }
+    
     func txtSizeForPurchaseLabelCount(sender: UILabel) -> UILabel{
         sender.textAlignment = .center
         sender.font = .systemFont(ofSize: bigLabelFont, weight: .bold)
@@ -248,9 +274,11 @@ class ViewController: UIViewController {
         sender.numberOfLines = 0
         return sender
     }
+    
     func buttonDimensions (sender: UIButton) -> UIButton {
         return sender
     }
+    
     func screenSizes() {
         if screen.width > 400 {
             standartDimensionsX = 380
@@ -266,6 +294,7 @@ class ViewController: UIViewController {
             logoCountHeight = 70
         }
     }
+    
     func buttons() {
         buttonOpenSceneOutlet.isEnabled = true
         buttonCloseSceneOutlet.isEnabled = false
@@ -279,6 +308,7 @@ class ViewController: UIViewController {
         minusTwo.isEnabled = false
         minusThree.isEnabled = false
     }
+    
     func createArray(){
         if BeerQeeper.shared.beerArray.isEmpty {
             BeerQeeper.shared.createBeer()
@@ -286,6 +316,7 @@ class ViewController: UIViewController {
             return
         }
     }
+    
     func addPurchases(sender: UIButton!){
             switch sender {
             case addOne:
@@ -337,6 +368,7 @@ class ViewController: UIViewController {
                 return
             }
     }
+    
     func sellButton(){
         BeerQeeper.shared.createPositionsCountAarray()
         BeerQeeper.shared.minusBeer()
@@ -346,11 +378,13 @@ class ViewController: UIViewController {
         BeerQeeper.shared.updateText()
         self.labels()
     }
+    
     func labels(){
         firstBeerLabelCount.text = "\(BeerQeeper.shared.firstPositionCount)"
         secondBeerLabelCount.text = "\(BeerQeeper.shared.secondPositionCount)"
         thirdBeerLabelCount.text = "\(BeerQeeper.shared.thirdPositionCount)"
     }
+    
     func closeDay() {
         BeerQeeper.shared.updateText()
         labelPurcaseCount.text = "Day information: \n\(BeerQeeper.shared.checkOutAll())"
@@ -380,6 +414,7 @@ class ViewController: UIViewController {
         hiddenButton.setTitleColor(.red, for: .normal)
         self.resetScene(sender: hiddenButton)
     }
+    
     func resetDay(){
         BeerQeeper.shared.positionsCount = []
         BeerQeeper.shared.totalSalesForDay = []
