@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		18FE8CC82EB903850001FDB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18FE8CA92EB903830001FDB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18FE8CB02EB903830001FDB5;
+			remoteInfo = "BeerQeeper 1.1";
+		};
+		18FE8CD22EB903850001FDB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18FE8CA92EB903830001FDB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18FE8CB02EB903830001FDB5;
+			remoteInfo = "BeerQeeper 1.1";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18FE8CB12EB903830001FDB5 /* BeerQeeper 1.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BeerQeeper 1.1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18FE8CC72EB903850001FDB5 /* BeerQeeper 1.1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BeerQeeper 1.1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18FE8CD12EB903850001FDB5 /* BeerQeeper 1.1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BeerQeeper 1.1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		18FE8CB32EB903830001FDB5 /* BeerQeeper 1.1 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "BeerQeeper 1.1";
+			sourceTree = "<group>";
+		};
+		18FE8CCA2EB903850001FDB5 /* BeerQeeper 1.1Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "BeerQeeper 1.1Tests";
+			sourceTree = "<group>";
+		};
+		18FE8CD42EB903850001FDB5 /* BeerQeeper 1.1UITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "BeerQeeper 1.1UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18FE8CAE2EB903830001FDB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18FE8CC42EB903850001FDB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18FE8CCE2EB903850001FDB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18FE8CA82EB903830001FDB5 = {
+			isa = PBXGroup;
+			children = (
+				18FE8CB32EB903830001FDB5 /* BeerQeeper 1.1 */,
+				18FE8CCA2EB903850001FDB5 /* BeerQeeper 1.1Tests */,
+				18FE8CD42EB903850001FDB5 /* BeerQeeper 1.1UITests */,
+				18FE8CB22EB903830001FDB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18FE8CB22EB903830001FDB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18FE8CB12EB903830001FDB5 /* BeerQeeper 1.1.app */,
+				18FE8CC72EB903850001FDB5 /* BeerQeeper 1.1Tests.xctest */,
+				18FE8CD12EB903850001FDB5 /* BeerQeeper 1.1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18FE8CB02EB903830001FDB5 /* BeerQeeper 1.1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18FE8CDA2EB903850001FDB5 /* Build configuration list for PBXNativeTarget "BeerQeeper 1.1" */;
+			buildPhases = (
+				18FE8CAD2EB903830001FDB5 /* Sources */,
+				18FE8CAE2EB903830001FDB5 /* Frameworks */,
+				18FE8CAF2EB903830001FDB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				18FE8CB32EB903830001FDB5 /* BeerQeeper 1.1 */,
+			);
+			name = "BeerQeeper 1.1";
+			packageProductDependencies = (
+			);
+			productName = "BeerQeeper 1.1";
+			productReference = 18FE8CB12EB903830001FDB5 /* BeerQeeper 1.1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18FE8CC62EB903850001FDB5 /* BeerQeeper 1.1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18FE8CDF2EB903850001FDB5 /* Build configuration list for PBXNativeTarget "BeerQeeper 1.1Tests" */;
+			buildPhases = (
+				18FE8CC32EB903850001FDB5 /* Sources */,
+				18FE8CC42EB903850001FDB5 /* Frameworks */,
+				18FE8CC52EB903850001FDB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18FE8CC92EB903850001FDB5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				18FE8CCA2EB903850001FDB5 /* BeerQeeper 1.1Tests */,
+			);
+			name = "BeerQeeper 1.1Tests";
+			packageProductDependencies = (
+			);
+			productName = "BeerQeeper 1.1Tests";
+			productReference = 18FE8CC72EB903850001FDB5 /* BeerQeeper 1.1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18FE8CD02EB903850001FDB5 /* BeerQeeper 1.1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18FE8CE22EB903850001FDB5 /* Build configuration list for PBXNativeTarget "BeerQeeper 1.1UITests" */;
+			buildPhases = (
+				18FE8CCD2EB903850001FDB5 /* Sources */,
+				18FE8CCE2EB903850001FDB5 /* Frameworks */,
+				18FE8CCF2EB903850001FDB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18FE8CD32EB903850001FDB5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				18FE8CD42EB903850001FDB5 /* BeerQeeper 1.1UITests */,
+			);
+			name = "BeerQeeper 1.1UITests";
+			packageProductDependencies = (
+			);
+			productName = "BeerQeeper 1.1UITests";
+			productReference = 18FE8CD12EB903850001FDB5 /* BeerQeeper 1.1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18FE8CA92EB903830001FDB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					18FE8CB02EB903830001FDB5 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					18FE8CC62EB903850001FDB5 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 18FE8CB02EB903830001FDB5;
+					};
+					18FE8CD02EB903850001FDB5 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 18FE8CB02EB903830001FDB5;
+					};
+				};
+			};
+			buildConfigurationList = 18FE8CAC2EB903830001FDB5 /* Build configuration list for PBXProject "BeerQeeper 1.1" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18FE8CA82EB903830001FDB5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 18FE8CB22EB903830001FDB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18FE8CB02EB903830001FDB5 /* BeerQeeper 1.1 */,
+				18FE8CC62EB903850001FDB5 /* BeerQeeper 1.1Tests */,
+				18FE8CD02EB903850001FDB5 /* BeerQeeper 1.1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18FE8CAF2EB903830001FDB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18FE8CC52EB903850001FDB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18FE8CCF2EB903850001FDB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18FE8CAD2EB903830001FDB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18FE8CC32EB903850001FDB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18FE8CCD2EB903850001FDB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18FE8CC92EB903850001FDB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18FE8CB02EB903830001FDB5 /* BeerQeeper 1.1 */;
+			targetProxy = 18FE8CC82EB903850001FDB5 /* PBXContainerItemProxy */;
+		};
+		18FE8CD32EB903850001FDB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18FE8CB02EB903830001FDB5 /* BeerQeeper 1.1 */;
+			targetProxy = 18FE8CD22EB903850001FDB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18FE8CDB2EB903850001FDB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BeerQeeper 1.1/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example2.BeerQeeper-1-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		18FE8CDC2EB903850001FDB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BeerQeeper 1.1/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example2.BeerQeeper-1-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		18FE8CDD2EB903850001FDB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18FE8CDE2EB903850001FDB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18FE8CE02EB903850001FDB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example2.BeerQeeper-1-1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeerQeeper 1.1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BeerQeeper 1.1";
+			};
+			name = Debug;
+		};
+		18FE8CE12EB903850001FDB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example2.BeerQeeper-1-1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeerQeeper 1.1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BeerQeeper 1.1";
+			};
+			name = Release;
+		};
+		18FE8CE32EB903850001FDB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example2.BeerQeeper-1-1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BeerQeeper 1.1";
+			};
+			name = Debug;
+		};
+		18FE8CE42EB903850001FDB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example2.BeerQeeper-1-1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BeerQeeper 1.1";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18FE8CAC2EB903830001FDB5 /* Build configuration list for PBXProject "BeerQeeper 1.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18FE8CDD2EB903850001FDB5 /* Debug */,
+				18FE8CDE2EB903850001FDB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18FE8CDA2EB903850001FDB5 /* Build configuration list for PBXNativeTarget "BeerQeeper 1.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18FE8CDB2EB903850001FDB5 /* Debug */,
+				18FE8CDC2EB903850001FDB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18FE8CDF2EB903850001FDB5 /* Build configuration list for PBXNativeTarget "BeerQeeper 1.1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18FE8CE02EB903850001FDB5 /* Debug */,
+				18FE8CE12EB903850001FDB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18FE8CE22EB903850001FDB5 /* Build configuration list for PBXNativeTarget "BeerQeeper 1.1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18FE8CE32EB903850001FDB5 /* Debug */,
+				18FE8CE42EB903850001FDB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18FE8CA92EB903830001FDB5 /* Project object */;
+}
