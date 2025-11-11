@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		18EFC2F52EC33B6600B3479C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 18EFC2F42EC33B6600B3479C /* SnapKit */; };
+		A825D5DEE237A0BA2C37FDE3 /* Pods_BeerQeeper_1_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A05EB65CB8C4DA46B22D60 /* Pods_BeerQeeper_1_1.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18FE8CB12EB903830001FDB5 /* BeerQeeper 1.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BeerQeeper 1.1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67A05EB65CB8C4DA46B22D60 /* Pods_BeerQeeper_1_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerQeeper_1_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B5CA6B918B32A297D97ECEC /* Pods-BeerQeeper 1.1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerQeeper 1.1.debug.xcconfig"; path = "Target Support Files/Pods-BeerQeeper 1.1/Pods-BeerQeeper 1.1.debug.xcconfig"; sourceTree = "<group>"; };
+		B2D299405611F37B159608D8 /* Pods-BeerQeeper 1.1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerQeeper 1.1.release.xcconfig"; path = "Target Support Files/Pods-BeerQeeper 1.1/Pods-BeerQeeper 1.1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -41,6 +45,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18EFC2F52EC33B6600B3479C /* SnapKit in Frameworks */,
+				A825D5DEE237A0BA2C37FDE3 /* Pods_BeerQeeper_1_1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +57,8 @@
 			children = (
 				18FE8CB32EB903830001FDB5 /* BeerQeeper 1.1 */,
 				18FE8CB22EB903830001FDB5 /* Products */,
+				53C0432FA74DA25693FC02C8 /* Pods */,
+				338F74C0D92B9AA33FE99D85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +70,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		338F74C0D92B9AA33FE99D85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67A05EB65CB8C4DA46B22D60 /* Pods_BeerQeeper_1_1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53C0432FA74DA25693FC02C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B5CA6B918B32A297D97ECEC /* Pods-BeerQeeper 1.1.debug.xcconfig */,
+				B2D299405611F37B159608D8 /* Pods-BeerQeeper 1.1.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -70,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18FE8CDA2EB903850001FDB5 /* Build configuration list for PBXNativeTarget "BeerQeeper 1.1" */;
 			buildPhases = (
+				4B13AE7A3C1646BB66BB657C /* [CP] Check Pods Manifest.lock */,
 				18FE8CAD2EB903830001FDB5 /* Sources */,
 				18FE8CAE2EB903830001FDB5 /* Frameworks */,
 				18FE8CAF2EB903830001FDB5 /* Resources */,
@@ -136,6 +162,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B13AE7A3C1646BB66BB657C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeerQeeper 1.1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18FE8CAD2EB903830001FDB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -149,6 +200,7 @@
 /* Begin XCBuildConfiguration section */
 		18FE8CDB2EB903850001FDB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B5CA6B918B32A297D97ECEC /* Pods-BeerQeeper 1.1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -179,6 +231,7 @@
 		};
 		18FE8CDC2EB903850001FDB5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2D299405611F37B159608D8 /* Pods-BeerQeeper 1.1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
