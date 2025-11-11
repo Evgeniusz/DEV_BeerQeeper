@@ -2,6 +2,7 @@
 //  BeerQeeper 1.1
 //  Created by Apple on 3.11.25.
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
     var screen = UIScreen.main.bounds.size
