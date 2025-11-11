@@ -197,58 +197,71 @@ class ViewController: UIViewController {
         labelPurcaseCount.text = "Select Products quantity"
     }
     
-    func start() {
-        self.screenSizes()
-        self.createArray()
-        minusPlusRefactor()
-        view.addSubview(firstNameOfBeerAvailiable)
+    fileprivate func allViewDimensionsLoad() {
         firstNameOfBeerAvailiable.frame = CGRect(x:(Int(screen.width) - standartDimensionsX)/2 , y: zeroPointY, width:standartDimensionsX, height: standartLabelHight)
-        firstNameOfBeerAvailiable.text = BeerQeeper.shared.beerArray[0].mark
-        self.textSizesForLabels(sender: firstNameOfBeerAvailiable)
-        view.addSubview(firstBeerLabelCount)
         firstBeerLabelCount.frame = CGRect(x: (Int(screen.width) - standartDimensionsX/3)/2, y: zeroPointY+indent, width: standartDimensionsX/3, height: logoCountHeight)
-        self.txtSizeForPurchaseLabelCount(sender: firstBeerLabelCount)
-        firstBeerLabelCount.text = "\(BeerQeeper.shared.firstPositionCount)"
-        view.addSubview(secondNameOfBeerAvaliable)
-        secondNameOfBeerAvaliable.text = "\(BeerQeeper.shared.beerArray[1].mark)"
-        self.textSizesForLabels(sender: secondNameOfBeerAvaliable)
         secondNameOfBeerAvaliable.frame = CGRect(x: (Int(screen.width) - standartDimensionsX)/2, y: Int(firstBeerLabelCount.frame.origin.y)+indent+logoCountHeight, width: standartDimensionsX, height: standartLabelHight)
-        view.addSubview(secondBeerLabelCount)
-        self.txtSizeForPurchaseLabelCount(sender: secondBeerLabelCount)
         secondBeerLabelCount.frame = CGRect(x: (Int(screen.width) - standartDimensionsX/3)/2, y: Int(secondNameOfBeerAvaliable.frame.origin.y)+indent+standartLabelHight, width: standartDimensionsX/3, height: logoCountHeight)
-        secondBeerLabelCount.text = "\(BeerQeeper.shared.secondPositionCount)"
-        view.addSubview(thirdNameOfBeerAvailiable)
-        thirdNameOfBeerAvailiable.text = "\(BeerQeeper.shared.beerArray[2].mark)"
-        self.textSizesForLabels(sender: thirdNameOfBeerAvailiable)
         thirdNameOfBeerAvailiable.frame = CGRect(x: (Int(screen.width) - standartDimensionsX)/2, y: Int(secondBeerLabelCount.frame.origin.y)+indent+logoCountHeight, width: standartDimensionsX, height: standartLabelHight)
-        view.addSubview(thirdBeerLabelCount)
-        thirdBeerLabelCount.text = "\(BeerQeeper.shared.thirdPositionCount)"
-        self.txtSizeForPurchaseLabelCount(sender: thirdBeerLabelCount)
         thirdBeerLabelCount.frame = CGRect(x: (Int(screen.width) - standartDimensionsX/3)/2, y: Int(thirdNameOfBeerAvailiable.frame.origin.y)+indent+standartLabelHight, width: standartDimensionsX/3, height: logoCountHeight)
-        view.addSubview(labelPurcaseCount)
-        labelPurcaseCount.numberOfLines = 0
-        labelPurcaseCount.textAlignment = .left
-        labelPurcaseCount.text = "Please Open session"
-        labelPurcaseCount.font = .systemFont(ofSize: 14, weight: .semibold)
         labelPurcaseCount.frame = CGRect(x: (Int(screen.width) - standartDimensionsX)/2, y: Int(thirdBeerLabelCount.frame.origin.y)+logoCountHeight, width: standartDimensionsX, height: standartFrameResultYeight)
-        view.addSubview(buttonOpenSceneOutlet)
-        view.addSubview(buttonSellPurchasesOutlet)
-        view.addSubview(buttonCloseSceneOutlet)
         buttonOpenSceneOutlet.frame = CGRect(x: (Int(screen.width) - standartDimensionsX)/2, y: Int(thirdBeerLabelCount.frame.origin.y) + indent + standartFrameResultYeight + zeroPointY, width: standartDimensionsX, height: standartLabelHight)
         buttonSellPurchasesOutlet.frame = CGRect(x: (Int(screen.width) - standartDimensionsX)/2, y: (Int(buttonOpenSceneOutlet.frame.origin.y) + smallIndent + standartLabelHight), width: standartDimensionsX, height: standartLabelHight)
         buttonCloseSceneOutlet.frame = CGRect(x: (Int(screen.width) - standartDimensionsX)/2, y: Int(buttonSellPurchasesOutlet.frame.origin.y) + smallIndent + standartLabelHight, width: standartDimensionsX, height: standartLabelHight)
-        view.addSubview(minusOne)
-        view.addSubview(minusTwo)
-        view.addSubview(minusThree)
-        view.addSubview(addOne)
-        view.addSubview(addTwo)
-        view.addSubview(addThree)
         minusOne.frame = CGRect(x: Int(screen.width) / 6, y: (Int(firstBeerLabelCount.frame.origin.y) + (logoCountHeight / 2)), width: standartLabelHight, height: standartLabelHight)
         minusTwo.frame = CGRect(x: Int(screen.width) / 6, y: (Int(secondBeerLabelCount.frame.origin.y) + (logoCountHeight / 2)), width: standartLabelHight, height: standartLabelHight)
         minusThree.frame = CGRect(x: Int(screen.width) / 6, y: (Int(thirdBeerLabelCount.frame.origin.y) + (logoCountHeight / 2)), width: standartLabelHight, height: standartLabelHight)
         addOne.frame = CGRect(x: Int(screen.width) - (Int(screen.width) / 4), y: (Int(firstBeerLabelCount.frame.origin.y) + (logoCountHeight / 2)), width: standartLabelHight, height: standartLabelHight)
         addTwo.frame = CGRect(x: Int(screen.width) - (Int(screen.width) / 4), y: (Int(secondBeerLabelCount.frame.origin.y) + (logoCountHeight / 2)), width: standartLabelHight, height: standartLabelHight)
         addThree.frame = CGRect(x: Int(screen.width) - (Int(screen.width) / 4), y: (Int(thirdBeerLabelCount.frame.origin.y) + (logoCountHeight / 2)), width: standartLabelHight, height: standartLabelHight)
+    }
+    
+    fileprivate func additionTextToViews() {
+        firstNameOfBeerAvailiable.text = BeerQeeper.shared.beerArray[0].mark
+        firstBeerLabelCount.text = "\(BeerQeeper.shared.firstPositionCount)"
+        secondNameOfBeerAvaliable.text = "\(BeerQeeper.shared.beerArray[1].mark)"
+        secondBeerLabelCount.text = "\(BeerQeeper.shared.secondPositionCount)"
+        secondBeerLabelCount.text = "\(BeerQeeper.shared.secondPositionCount)"
+        thirdNameOfBeerAvailiable.text = "\(BeerQeeper.shared.beerArray[2].mark)"
+        thirdBeerLabelCount.text = "\(BeerQeeper.shared.thirdPositionCount)"
+        labelPurcaseCount.numberOfLines = 0
+        labelPurcaseCount.textAlignment = .left
+        labelPurcaseCount.text = "Please Open session"
+        labelPurcaseCount.font = .systemFont(ofSize: 14, weight: .semibold)
+    }
+    
+    fileprivate func addAllSubViews() {
+        view.addSubview(firstNameOfBeerAvailiable)
+        view.addSubview(firstBeerLabelCount)
+        view.addSubview(secondNameOfBeerAvaliable)
+        view.addSubview(secondBeerLabelCount)
+        view.addSubview(thirdNameOfBeerAvailiable)
+        view.addSubview(thirdBeerLabelCount)
+        view.addSubview(labelPurcaseCount)
+        view.addSubview(buttonOpenSceneOutlet)
+        view.addSubview(buttonSellPurchasesOutlet)
+        view.addSubview(buttonCloseSceneOutlet)
+        view.addSubview(minusOne)
+        view.addSubview(minusTwo)
+        view.addSubview(minusThree)
+        view.addSubview(addOne)
+        view.addSubview(addTwo)
+        view.addSubview(addThree)
+    }
+    
+    func start() {
+        self.screenSizes()
+        self.createArray()
+        addAllSubViews()
+        minusPlusRefactor()
+        allViewDimensionsLoad()
+        additionTextToViews()
+        self.textSizesForLabels(sender: firstNameOfBeerAvailiable)
+        self.txtSizeForPurchaseLabelCount(sender: firstBeerLabelCount)
+        self.textSizesForLabels(sender: secondNameOfBeerAvaliable)
+        self.txtSizeForPurchaseLabelCount(sender: secondBeerLabelCount)
+        self.textSizesForLabels(sender: thirdNameOfBeerAvailiable)
+        self.txtSizeForPurchaseLabelCount(sender: thirdBeerLabelCount)
         self.buttons()
         self.openSceneButton(sender: buttonOpenSceneOutlet)
         self.sellButton(sender: buttonSellPurchasesOutlet)
