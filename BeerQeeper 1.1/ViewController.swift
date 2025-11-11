@@ -6,14 +6,14 @@ import SnapKit
 
 class ViewController: UIViewController {
     var screen = UIScreen.main.bounds.size
-    let zeroPointX = 0
+    let zeroPointX = 25
     var zeroPointY = 50
     var standartDimensionsX = 300
     var standartFrameResultYeight = 150
     var standartLabelHight = 30
     var standartLabelFont: CGFloat = 24
     var bigLabelFont: CGFloat = 80
-    var indent = 35
+    var indent = 30
     let smallIndent = 5
     var logoCountHeight = 85
     
@@ -198,23 +198,23 @@ class ViewController: UIViewController {
     }
     
     fileprivate func allViewDimensionsLoad() {
-        firstNameOfBeerAvailiable.frame = CGRect(x:(Int(screen.width) - standartDimensionsX)/2 , y: zeroPointY, width:standartDimensionsX, height: standartLabelHight)
-        firstBeerLabelCount.frame = CGRect(x: (Int(screen.width) - standartDimensionsX/3)/2, y: zeroPointY+indent, width: standartDimensionsX/3, height: logoCountHeight)
-        secondNameOfBeerAvaliable.frame = CGRect(x: (Int(screen.width) - standartDimensionsX)/2, y: Int(firstBeerLabelCount.frame.origin.y)+indent+logoCountHeight, width: standartDimensionsX, height: standartLabelHight)
-        secondBeerLabelCount.frame = CGRect(x: (Int(screen.width) - standartDimensionsX/3)/2, y: Int(secondNameOfBeerAvaliable.frame.origin.y)+indent+standartLabelHight, width: standartDimensionsX/3, height: logoCountHeight)
-        thirdNameOfBeerAvailiable.frame = CGRect(x: (Int(screen.width) - standartDimensionsX)/2, y: Int(secondBeerLabelCount.frame.origin.y)+indent+logoCountHeight, width: standartDimensionsX, height: standartLabelHight)
-        thirdBeerLabelCount.frame = CGRect(x: (Int(screen.width) - standartDimensionsX/3)/2, y: Int(thirdNameOfBeerAvailiable.frame.origin.y)+indent+standartLabelHight, width: standartDimensionsX/3, height: logoCountHeight)
-        labelPurcaseCount.frame = CGRect(x: (Int(screen.width) - standartDimensionsX)/2, y: Int(thirdBeerLabelCount.frame.origin.y)+logoCountHeight, width: standartDimensionsX, height: standartFrameResultYeight)
-        buttonOpenSceneOutlet.frame = CGRect(x: (Int(screen.width) - standartDimensionsX)/2, y: Int(thirdBeerLabelCount.frame.origin.y) + indent + standartFrameResultYeight + zeroPointY, width: standartDimensionsX, height: standartLabelHight)
-        buttonSellPurchasesOutlet.frame = CGRect(x: (Int(screen.width) - standartDimensionsX)/2, y: (Int(buttonOpenSceneOutlet.frame.origin.y) + smallIndent + standartLabelHight), width: standartDimensionsX, height: standartLabelHight)
-        buttonCloseSceneOutlet.frame = CGRect(x: (Int(screen.width) - standartDimensionsX)/2, y: Int(buttonSellPurchasesOutlet.frame.origin.y) + smallIndent + standartLabelHight, width: standartDimensionsX, height: standartLabelHight)
-        minusOne.frame = CGRect(x: Int(screen.width) / 6, y: (Int(firstBeerLabelCount.frame.origin.y) + (logoCountHeight / 2)), width: standartLabelHight, height: standartLabelHight)
-        minusTwo.frame = CGRect(x: Int(screen.width) / 6, y: (Int(secondBeerLabelCount.frame.origin.y) + (logoCountHeight / 2)), width: standartLabelHight, height: standartLabelHight)
-        minusThree.frame = CGRect(x: Int(screen.width) / 6, y: (Int(thirdBeerLabelCount.frame.origin.y) + (logoCountHeight / 2)), width: standartLabelHight, height: standartLabelHight)
-        addOne.frame = CGRect(x: Int(screen.width) - (Int(screen.width) / 4), y: (Int(firstBeerLabelCount.frame.origin.y) + (logoCountHeight / 2)), width: standartLabelHight, height: standartLabelHight)
-        addTwo.frame = CGRect(x: Int(screen.width) - (Int(screen.width) / 4), y: (Int(secondBeerLabelCount.frame.origin.y) + (logoCountHeight / 2)), width: standartLabelHight, height: standartLabelHight)
-        addThree.frame = CGRect(x: Int(screen.width) - (Int(screen.width) / 4), y: (Int(thirdBeerLabelCount.frame.origin.y) + (logoCountHeight / 2)), width: standartLabelHight, height: standartLabelHight)
-    }
+//        firstNameOfBeerAvailiable.frame = CGRect(x:(Int(screen.width) - standartDimensionsX)/2 , y: zeroPointY, width:standartDimensionsX, height: standartLabelHight)
+//        firstBeerLabelCount.frame = CGRect(x: (Int(screen.width) - standartDimensionsX/3)/2, y: zeroPointY+indent, width: standartDimensionsX/3, height: logoCountHeight)
+//        secondNameOfBeerAvaliable.frame = CGRect(x: (Int(screen.width) - standartDimensionsX)/2, y: Int(firstBeerLabelCount.frame.origin.y)+indent+logoCountHeight, width: standartDimensionsX, height: standartLabelHight)
+//        secondBeerLabelCount.frame = CGRect(x: (Int(screen.width) - standartDimensionsX/3)/2, y: Int(secondNameOfBeerAvaliable.frame.origin.y)+indent+standartLabelHight, width: standartDimensionsX/3, height: logoCountHeight)
+//        thirdNameOfBeerAvailiable.frame = CGRect(x: (Int(screen.width) - standartDimensionsX)/2, y: Int(secondBeerLabelCount.frame.origin.y)+indent+logoCountHeight, width: standartDimensionsX, height: standartLabelHight)
+//        thirdBeerLabelCount.frame = CGRect(x: (Int(screen.width) - standartDimensionsX/3)/2, y: Int(thirdNameOfBeerAvailiable.frame.origin.y)+indent+standartLabelHight, width: standartDimensionsX/3, height: logoCountHeight)
+//        labelPurcaseCount.frame = CGRect(x: (Int(screen.width) - standartDimensionsX)/2, y: Int(thirdBeerLabelCount.frame.origin.y)+logoCountHeight, width: standartDimensionsX, height: standartFrameResultYeight)
+//        buttonOpenSceneOutlet.frame = CGRect(x: (Int(screen.width) - standartDimensionsX)/2, y: Int(thirdBeerLabelCount.frame.origin.y) + indent + standartFrameResultYeight + zeroPointY, width: standartDimensionsX, height: standartLabelHight)
+//        buttonSellPurchasesOutlet.frame = CGRect(x: (Int(screen.width) - standartDimensionsX)/2, y: (Int(buttonOpenSceneOutlet.frame.origin.y) + smallIndent + standartLabelHight), width: standartDimensionsX, height: standartLabelHight)
+//        buttonCloseSceneOutlet.frame = CGRect(x: (Int(screen.width) - standartDimensionsX)/2, y: Int(buttonSellPurchasesOutlet.frame.origin.y) + smallIndent + standartLabelHight, width: standartDimensionsX, height: standartLabelHight)
+//        minusOne.frame = CGRect(x: Int(screen.width) / 6, y: (Int(firstBeerLabelCount.frame.origin.y) + (logoCountHeight / 2)), width: standartLabelHight, height: standartLabelHight)
+//        minusTwo.frame = CGRect(x: Int(screen.width) / 6, y: (Int(secondBeerLabelCount.frame.origin.y) + (logoCountHeight / 2)), width: standartLabelHight, height: standartLabelHight)
+//        minusThree.frame = CGRect(x: Int(screen.width) / 6, y: (Int(thirdBeerLabelCount.frame.origin.y) + (logoCountHeight / 2)), width: standartLabelHight, height: standartLabelHight)
+//        addOne.frame = CGRect(x: Int(screen.width) - (Int(screen.width) / 4), y: (Int(firstBeerLabelCount.frame.origin.y) + (logoCountHeight / 2)), width: standartLabelHight, height: standartLabelHight)
+//        addTwo.frame = CGRect(x: Int(screen.width) - (Int(screen.width) / 4), y: (Int(secondBeerLabelCount.frame.origin.y) + (logoCountHeight / 2)), width: standartLabelHight, height: standartLabelHight)
+//        addThree.frame = CGRect(x: Int(screen.width) - (Int(screen.width) / 4), y: (Int(thirdBeerLabelCount.frame.origin.y) + (logoCountHeight / 2)), width: standartLabelHight, height: standartLabelHight)
+  }
     
     fileprivate func additionTextToViews() {
         firstNameOfBeerAvailiable.text = BeerQeeper.shared.beerArray[0].mark
@@ -247,6 +247,110 @@ class ViewController: UIViewController {
         view.addSubview(addOne)
         view.addSubview(addTwo)
         view.addSubview(addThree)
+        self.comstraintsAddedForAll()
+    }
+    
+    fileprivate func buttonHideMethod() {
+        hiddenButton.snp.makeConstraints{ make in
+            make.top.equalTo(labelPurcaseCount.snp_bottomMargin).offset(indent)
+            make.left.equalToSuperview().offset(zeroPointX)
+            make.right.equalToSuperview().inset(zeroPointX)
+            make.height.equalTo(standartLabelHight)
+        }
+    }
+    
+    func comstraintsAddedForAll(){
+        firstNameOfBeerAvailiable.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(zeroPointY)
+            make.left.equalToSuperview().offset(zeroPointX)
+            make.right.equalToSuperview().inset(zeroPointX)
+            make.height.equalTo(standartLabelHight)
+        }
+        
+        firstBeerLabelCount.snp.makeConstraints{ make in
+            make.top.equalTo(firstNameOfBeerAvailiable).offset(indent)
+            make.centerX.equalToSuperview()
+        }
+        
+        secondNameOfBeerAvaliable.snp.makeConstraints{ make in
+            make.top.equalTo(firstBeerLabelCount.snp_bottomMargin).offset(indent)
+            make.left.equalToSuperview().offset(zeroPointX)
+            make.right.equalToSuperview().inset(zeroPointX)
+        }
+        
+        secondBeerLabelCount.snp.makeConstraints {make in
+            make.top.equalTo(secondNameOfBeerAvaliable.snp_bottomMargin).offset(indent)
+            make.centerX.equalToSuperview()
+        }
+        
+        thirdNameOfBeerAvailiable.snp.makeConstraints{ make in
+            make.top.equalTo(secondBeerLabelCount.snp_bottomMargin).offset(indent)
+            make.left.equalToSuperview().offset(zeroPointX)
+        }
+        
+        thirdBeerLabelCount.snp.makeConstraints{ make in
+            make.top.equalTo(thirdNameOfBeerAvailiable.snp_bottomMargin).offset(indent)
+            make.centerX.equalToSuperview()
+        }
+        
+        labelPurcaseCount.snp.makeConstraints{ make in
+            make.top.equalTo(thirdBeerLabelCount.snp_bottomMargin).offset(indent)
+            make.left.equalToSuperview().offset(zeroPointX)
+            make.right.equalToSuperview().offset(zeroPointX)
+            make.height.equalTo(standartFrameResultYeight)
+        }
+        
+        buttonOpenSceneOutlet.snp.makeConstraints{ make in
+            make.top.equalTo(labelPurcaseCount.snp_bottomMargin).offset(indent)
+            make.left.equalToSuperview().offset(zeroPointX)
+            make.right.equalToSuperview().inset(zeroPointX)
+            make.height.equalTo(standartLabelHight)
+        }
+        
+        buttonSellPurchasesOutlet.snp.makeConstraints{ make in
+            make.top.equalTo(buttonOpenSceneOutlet.snp_bottomMargin).offset(smallIndent)
+            make.left.equalToSuperview().offset(zeroPointX)
+            make.right.equalToSuperview().inset(zeroPointX)
+            make.height.equalTo(standartLabelHight)
+        }
+        
+        buttonCloseSceneOutlet.snp.makeConstraints{ make in
+            make.top.equalTo(buttonSellPurchasesOutlet.snp_bottomMargin).offset(smallIndent)
+            make.left.equalToSuperview().offset(zeroPointX)
+            make.right.equalToSuperview().inset(zeroPointX)
+            make.height.equalTo(standartLabelHight)
+        }
+        
+        addOne.snp.makeConstraints{ make in
+            make.right.equalToSuperview().inset(zeroPointY)
+            make.centerY.equalTo(firstBeerLabelCount.snp_centerYWithinMargins)
+        }
+        
+        addTwo.snp.makeConstraints{ make in
+            make.right.equalToSuperview().inset(zeroPointY)
+            make.centerY.equalTo(secondBeerLabelCount.snp_centerYWithinMargins)
+        }
+        
+        addThree.snp.makeConstraints{ make in
+            make.right.equalToSuperview().inset(zeroPointY)
+            make.centerY.equalTo(thirdBeerLabelCount.snp_centerYWithinMargins)
+        }
+        
+        minusOne.snp.makeConstraints{ make in
+            make.left.equalToSuperview().offset(zeroPointY)
+            make.centerY.equalTo(firstBeerLabelCount.snp_centerYWithinMargins)
+        }
+        
+        minusTwo.snp.makeConstraints{ make in
+            make.left.equalToSuperview().offset(zeroPointY)
+            make.centerY.equalTo(secondBeerLabelCount.snp_centerYWithinMargins)
+        }
+        
+        minusThree.snp.makeConstraints{ make in
+            make.left.equalToSuperview().offset(zeroPointY)
+            make.centerY.equalTo(thirdBeerLabelCount.snp_centerYWithinMargins)
+        }
+        
     }
     
     func start() {
@@ -296,6 +400,7 @@ class ViewController: UIViewController {
     func screenSizes() {
         if screen.width > 400 {
             standartDimensionsX = 380
+            zeroPointY = 85
         } else if screen.width < 400 {
             standartDimensionsX = 300
             zeroPointY = 30
@@ -421,7 +526,8 @@ class ViewController: UIViewController {
         minusThree.isEnabled = false
         buttonOpenSceneOutlet.isHidden = true
         view.addSubview(hiddenButton)
-        hiddenButton.frame = CGRect(x: (Int(screen.width) - standartDimensionsX)/2, y: Int(thirdBeerLabelCount.frame.origin.y) + indent + standartFrameResultYeight + zeroPointY, width: standartDimensionsX, height: standartLabelHight)
+        buttonHideMethod()
+//        hiddenButton.frame = CGRect(x: (Int(screen.width) - standartDimensionsX)/2, y: Int(thirdBeerLabelCount.frame.origin.y) + indent + standartFrameResultYeight + zeroPointY, width: standartDimensionsX, height: standartLabelHight)
         hiddenButton.isEnabled = true
         hiddenButton.isHidden = false
         hiddenButton.setTitle("Reset", for: .normal)
